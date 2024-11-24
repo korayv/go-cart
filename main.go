@@ -22,10 +22,10 @@ func giftcardactivate() GiftCard {
 func main() {
 	cardHolder1 := giftcardactivate()
 	cardHolder2 := giftcardactivate()
-	cardHolder1.CheckBalance()
-	cardHolder2.CheckBalance()
+	fmt.Println(cardHolder1.CheckBalance())
+	fmt.Println(cardHolder2.CheckBalance())
 	cardHolder1.DeductAmount(30)
 	cardHolder2.DeductAmount(10)
-	cardHolder1.CheckBalance()
-	cardHolder2.CheckBalance()
+	fmt.Println(cardHolder1.CheckBalance())
+	fmt.Println(cardHolder2.CheckBalance())
 }
